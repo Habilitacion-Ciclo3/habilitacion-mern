@@ -27,7 +27,7 @@ app.use(cors(corsOptions));
 app.use(morgan('dev'));
 app.use(express.json());
 //routes
-app.use('/api/tasks',require('./routes/task.routes'));
+app.use('/api/productos',require('./routes/productos.routes'));
 //static files
 console.log(path.join(__dirname, 'public'))
 app.use(express.static(path.join(__dirname, 'public')))
